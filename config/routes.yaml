@@ -1,3 +1,11 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+homepage:
+    path: /
+    controller: App\Controller\Homepage\ShowHomepageController::index
+
+auth:
+    prefix: /auth
+    resource: routes/auth/routes.yaml

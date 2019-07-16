@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <title>Pages - Admin Dashboard UI Kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="apple-touch-icon" href="{{ asset('ico/60.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('ico/76.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('ico/120.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('ico/152.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+
+    {% block stylesheets %}
+        <link href="{{ asset('build/plugins/pace/pace-theme-flash.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('build/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('build/plugins/font-awesome/css/font-awesome.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('build/plugins/jquery-scrollbar/jquery.scrollbar.css') }}" rel="stylesheet" type="text/css"
+              media="screen"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet"/>
+        <link href="{{ asset('build/plugins/switchery/css/switchery.min.css') }}" rel="stylesheet" type="text/css"
+              media="screen"/>
+        {{ encore_entry_link_tags('app') }}
+
+    {% endblock %}
+</head>
+
+<body class="fixed-header menu-pin">
+{% block child %}{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    <script src="{{ asset('build/js/core/main.js') }}"></script>
+    <script src="{{ asset('build/js/core/pages.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script src="{{ asset('build/js/core/smfgo.js') }}"></script>
+{% endblock %}
+
+{% block child_after_script %}{% endblock %}
+</body>
+</html>

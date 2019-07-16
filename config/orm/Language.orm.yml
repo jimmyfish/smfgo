@@ -1,0 +1,13 @@
+App\Entity\Language:
+    type: entity
+    repositoryClass: App\Repository\LanguageRepository
+    table: language
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
